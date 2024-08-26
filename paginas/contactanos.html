@@ -73,27 +73,40 @@
 
     <h1>Contactanos</h1>
 
-    <form method="post" name="contactanos" netlify>
+    <form method="post" name="contactanos" netlify class="grid-container-form">
         
-        <h3>Nombre</h3>
-        <input type="text" name="nombre" placeholder="Juan" id="">
+        <div class="grid-container-form-field-1">
+            <h3>Nombre</h3>
+            <input type="text" name="nombre" placeholder="Juan" id="">
+        </div>
         
-        <h3>Apellido</h3>
-        <input type="text" name="apellido" placeholder="Perez" id="">
-        
-        <h3>E-mail</h3>
-        <input type="email" name="mail" placeholder="mail@dominio.com" id="">
-        
-        <h3>Teléfono</h3>
-        <h4>Código de área</h4>    
-        <h4>Número</h4>
-        <input type="number" name="codigo_area" placeholder="11" id="">
-        <input type="number" name="numero_telefono" placeholder="23459876" id="">
-        
-        <h3>Mensaje</h3>
-        <textarea name="Mensaje" placeholder="Escribí tu mensaje acá..." id="mensaje" cols="30" rows="10"></textarea>
-        <input type="submit" name="enviar" id="enviar">
+        <div class="grid-container-form-field-2">
+            <h3>Apellido</h3>
+            <input type="text" name="apellido" placeholder="Perez" id="">
+        </div>
 
+        <div class="grid-container-form-field-3">
+            <h3>E-mail</h3>
+            <input type="email" name="mail" placeholder="mail@dominio.com" id="">
+        </div>
+
+        <div class="grid-container-form-field-4">
+            <h3>Teléfono</h3>
+            <div class="grid-container-form-field-4_1">
+                <h4>Cod de área</h4>    
+                <input type="number" name="codigo_area" placeholder="11" id="">
+            </div>
+            <div class="grid-container-form-field-4_2">
+                <h4>Número</h4>
+                <input type="number" name="numero_telefono" placeholder="23459876" id="">
+            </div>
+        </div>
+
+        <div class="grid-container-form-field-5">
+            <h3>Mensaje</h3>
+            <textarea name="Mensaje" placeholder="Escribí tu mensaje acá..." id="mensaje" cols="30" rows="10"></textarea>
+            <input type="submit" name="enviar" id="enviar">
+        </div>
     </form>
 
     <footer>

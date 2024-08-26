@@ -94,10 +94,35 @@ h1 {
     filter: grayscale();
 }
 
+h2{
+    width: auto;
+    margin: 10px;
+    font-size: x-large;
+}
+
+h3{
+    width: auto;
+    margin: 10px;
+    font-size: larger;
+}
+
+h4 {
+    width: auto;
+    margin: 10px;
+    font-size: large;
+}
+
+p{
+    width: auto;
+    margin: 10px;
+    font-size: medium;
+}
+
 /*Estilo del formulario*/
 form{
-    width: 30%;
+    width: 70%;
     padding: 15px;
+    margin: 10px;
     }
 
 form input{
@@ -112,22 +137,56 @@ form #enviar{
     background-color: #7fffd4;
 }
 
-h2{
-    width: auto;
-    margin: 10px;
-    font-size: x-large;
+form h3 {
+    margin-left: 0;
 }
 
-h3{
-    width: auto;
-    margin: 10px;
-    font-size: larger;
+.grid-container-form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
 }
 
-p{
-    width: auto;
-    margin: 10px;
-    font-size: medium;
+.grid-container-form-field-1{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.grid-container-form-field-2{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.grid-container-form-field-3{
+    grid-column: 1 / span 2;
+    grid-row: 2;
+}
+
+.grid-container-form-field-4{
+    grid-column: 1 / span 2;
+}
+
+
+.grid-container-form-field-4{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.grid-container-form-field-4_1{
+    grid-column: span 1;
+    grid-row: 2;
+}
+
+.grid-container-form-field-4_2{
+    grid-column: span 3;
+    grid-row: 2;
+}
+
+.grid-container-form-field-5{
+    grid-column: 1 / span 2;
+    grid-row: 4;
 }
 
 @media only screen and (max-width: 768px){
@@ -138,6 +197,11 @@ p{
     h3 {
         font-size: small;
     }
+
+    h4 {
+        font-size: smaller;
+    }
+
     p{
         font-size: smaller;
     }
@@ -147,6 +211,11 @@ p{
     h3 {
         font-size: medium;
     }
+
+    h4 {
+        font-size: small;
+    }
+
     p{
         font-size: small;
     }    
