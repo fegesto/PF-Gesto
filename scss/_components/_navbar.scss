@@ -1,0 +1,48 @@
+header{ 
+    /*Nav bar*/
+     nav{
+        display: flex;
+        background: $color-navbar;
+        width: 100%;
+        z-index: 100;
+        float: left; 
+        
+        .navbar-toggler-icon{
+            max-width: 10px;
+        }
+
+
+        ul{
+            overflow: hidden;
+            list-style: none;
+            margin-left: 20%;
+            background: $color-navbar;
+
+            li {
+                float: left;
+                font-size: 15px;
+                transition: 0.3s;
+
+                &:hover {
+                    /* background: #094355; */
+                    /* padding: 10px 20px; */
+                    font-size: large;
+                }
+                
+                a {
+                    background: $color-navbar;
+                    display: block;
+                    padding: 10px 20px;
+                }
+            }
+
+        }
+    }
+}
+
+.font__navbar {
+    color: $color-title;
+    font-weight: bold ;
+    font-size: larger;
+    text-decoration: none;
+}

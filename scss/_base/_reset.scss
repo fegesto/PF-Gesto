@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    }
+
+header{
+    background-color: $color-sections;
+}
+
+body{
+    background-color: $color-background-body;
+}
+
+h1 {
+    text-align: center;
+    background: $color-sections;
+    color: $color-title;
+
+}
+
+h2{
+    width: auto;
+    margin: 10px;
+    font-size: x-large;
+}
+
+h3{
+    width: auto;
+    margin: 10px;
+    font-size: larger;
+}
+
+h4 {
+    width: auto;
+    margin: 10px;
+    font-size: large;
+}
+
+p{
+    width: auto;
+    margin: 10px;
+    font-size: medium;
+}

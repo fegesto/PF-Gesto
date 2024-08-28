@@ -1,0 +1,22 @@
+.services-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+.services-container-description,
+.services-container-img {
+    flex-grow: 1; 
+    flex-basis: 45%;
+    padding: 10px; 
+    box-sizing: border-box;
+}
+
+.services-img {
+    width: 100%;
+    height: auto;
+}

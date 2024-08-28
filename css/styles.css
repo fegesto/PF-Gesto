@@ -3,86 +3,20 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
-  /* background-color: aliceblue; */
 }
 
-/*Estilo logo*/
 header {
   background-color: #021637;
-  /*Nav bar*/
-}
-header nav {
-  display: flex;
-  position: sticky;
-  top: 0;
-  background: #208ed9;
-  width: 100%;
-  z-index: 100;
-  float: left;
-}
-header nav ul {
-  overflow: hidden;
-  list-style: none;
-  margin-left: 20%;
-  background: #208ed9;
-}
-header nav ul li {
-  float: left;
-  font-size: 15px;
-  transition: 0.3s;
-}
-header nav ul li:hover {
-  /* background: #094355; */
-  /* padding: 10px 20px; */
-  font-size: large;
-}
-header nav ul li a {
-  background: #208ed9;
-  display: block;
-  padding: 10px 20px;
-}
-
-#logoGGProd {
-  /* width: auto;
-  margin-bottom: 0;
-  z-index: 100;
-  position: relative;
-  left: 45%; */
-  display: flex;
-  justify-content: center;
-  background-color: #021637;
-}
-
-.font__navbar {
-  color: #7fffd4;
-  font-weight: bold;
-  font-size: larger;
-  text-decoration: none;
 }
 
 body {
-  background-color: aliceblue;
-}
-
-/*Estilo banner de img*/
-.bannerImagen {
-  box-sizing: border-box;
-  background-color: #021637;
-  width: 100%;
-  max-height: 5fr;
+  background-color: #f0f8ff;
 }
 
 h1 {
   text-align: center;
   background: #021637;
-  color: beige;
-}
-
-.logo_partner {
-  width: 5%;
-  float: left;
-  margin: 20px;
-  filter: grayscale();
+  color: #F5F5DC;
 }
 
 h2 {
@@ -109,6 +43,48 @@ p {
   font-size: medium;
 }
 
+header {
+  /*Nav bar*/
+}
+header nav {
+  display: flex;
+  background: #208ed9;
+  width: 100%;
+  z-index: 100;
+  float: left;
+}
+header nav .navbar-toggler-icon {
+  max-width: 10px;
+}
+header nav ul {
+  overflow: hidden;
+  list-style: none;
+  margin-left: 20%;
+  background: #208ed9;
+}
+header nav ul li {
+  float: left;
+  font-size: 15px;
+  transition: 0.3s;
+}
+header nav ul li:hover {
+  /* background: #094355; */
+  /* padding: 10px 20px; */
+  font-size: large;
+}
+header nav ul li a {
+  background: #208ed9;
+  display: block;
+  padding: 10px 20px;
+}
+
+.font__navbar {
+  color: #F5F5DC;
+  font-weight: bold;
+  font-size: larger;
+  text-decoration: none;
+}
+
 /*Estilo del formulario*/
 form {
   width: 70%;
@@ -123,8 +99,8 @@ form textarea {
 }
 form #enviar {
   border-radius: 5px;
-  color: white;
-  background-color: #007bff;
+  color: #F5F5DC;
+  background-color: #208ed9;
   border-color: #0b7dda;
 }
 form #enviar:hover {
@@ -152,17 +128,14 @@ form h3 {
 }
 
 .grid-container-form-field-3 {
-  grid-column: 1/span 2;
+  grid-column: 1;
   grid-row: 2;
 }
 
 .grid-container-form-field-4 {
   grid-column: 1/span 2;
-}
-
-.grid-container-form-field-4 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(24, 1fr);
   gap: 20px;
 }
 
@@ -172,7 +145,7 @@ form h3 {
 }
 
 .grid-container-form-field-4_2 {
-  grid-column: span 3;
+  grid-column: span 6;
   grid-row: 2;
 }
 
@@ -181,31 +154,6 @@ form h3 {
   grid-row: 4;
 }
 
-@media only screen and (max-width: 768px) {
-  h2 {
-    font-size: large;
-  }
-  h3 {
-    font-size: small;
-  }
-  h4 {
-    font-size: smaller;
-  }
-  p {
-    font-size: smaller;
-  }
-}
-@media only screen and (min-width: 498px) and (max-width: 767px) {
-  h3 {
-    font-size: medium;
-  }
-  h4 {
-    font-size: small;
-  }
-  p {
-    font-size: small;
-  }
-}
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -241,48 +189,8 @@ form h3 {
   font-size: large;
 }
 
-@media only screen and (max-width: 768px) {
-  .grid-item .paragraph-grid {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: x-small;
-  }
-}
-@media only screen and (min-width: 498px) and (max-width: 767px) {
-  .grid-item .paragraph-grid {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: smaller;
-  }
-}
-.services-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-bottom: 5px;
-}
-
-.services-container-description {
-  display: flex;
-  width: 80%;
-  justify-content: space-around;
-}
-
-.services-container-img {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  margin-bottom: 5px;
-}
-
-.services-img {
-  width: 30%;
-}
-
 /* footer nav{
-    background-color: #021637;
+    background-color: $color-sections;
     width: 100%;
 } */
 footer {
@@ -290,12 +198,12 @@ footer {
   background-color: #021637;
 }
 footer nav ul {
-  /* background-color: #021637; */
+  /* background-color: $color-sections; */
   overflow: hidden;
   list-style: none;
 }
 footer nav ul li a {
-  /* background-color: #021637; */
+  /* background-color: $color-sections; */
   color: #c0c0c0;
   padding: 10px 20px;
   text-decoration: none;
@@ -314,10 +222,10 @@ footer nav ul li:hover {
 }
 
 /* footer nav ul li {
-    background-color: #021637;
+background-color: $color-sections;
 } */
 .copyright__gg p {
-  /* background-color: #021637; */
+  /* background-color: $color-sections; */
   color: #c0c0c0;
   width: 100%;
   text-align: center;
@@ -325,6 +233,103 @@ footer nav ul li:hover {
   font-size: small;
   margin: 0;
   font-size: 10px;
+}
+
+/*Estilo logo*/
+#logoGGProd {
+  display: flex;
+  justify-content: center;
+  background-color: #021637;
+}
+
+.imgLogoProd {
+  max-width: 100%;
+}
+
+/*Estilo banner de img*/
+.bannerImagen {
+  box-sizing: border-box;
+  background-color: #021637;
+  width: 100%;
+  max-height: 5fr;
+}
+
+.logo_partner {
+  width: 5%;
+  float: left;
+  margin: 20px;
+  filter: grayscale();
+}
+
+.services-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.services-container-description,
+.services-container-img {
+  flex-grow: 1;
+  flex-basis: 45%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.services-img {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 498px) and (max-width: 767px) {
+  .grid-item .paragraph-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: smaller;
+  }
+  h3 {
+    font-size: medium;
+  }
+  h4 {
+    font-size: small;
+  }
+  p {
+    font-size: small;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .grid-item .paragraph-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-small;
+  }
+  h2 {
+    font-size: large;
+  }
+  h3 {
+    font-size: small;
+  }
+  h4 {
+    font-size: smaller;
+  }
+  p {
+    font-size: smaller;
+  }
+  #logoGGProd {
+    overflow: hidden;
+  }
+  footer nav ul li a {
+    padding: 0 2px;
+    font-size: x-small;
+  }
+  .copyright__gg p {
+    font-size: xx-small;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

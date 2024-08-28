@@ -1,0 +1,72 @@
+@media only screen and (min-width: $min-width-desktop) and (max-width: $max-width-desktop){
+    .grid-item{
+        .paragraph-grid{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: smaller;
+        }    
+    }
+    h3 {
+        font-size: medium;
+    }
+
+    h4 {
+        font-size: small;
+    }
+
+    p{
+        font-size: small;
+    }  
+}
+
+@media only screen and (max-width:$max-width-mobile){
+    .grid-item{
+        .paragraph-grid{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size:x-small;
+        }
+    }
+
+    h2 {
+        font-size: large;
+    }
+ 
+    h3 {
+        font-size: small;
+    }
+
+    h4 {
+        font-size: smaller;
+    }
+
+    p{
+        font-size: smaller;
+    }
+
+    #logoGGProd{
+        overflow: hidden;
+    }
+
+    footer{
+        nav {
+            ul {
+                li{
+                    a{  
+                        padding: 0 2px;
+                        font-size: x-small;
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright__gg {
+        p{
+            font-size:xx-small;
+        }
+    }
+
+}

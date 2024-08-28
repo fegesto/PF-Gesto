@@ -1,0 +1,74 @@
+/*Estilo del formulario*/
+
+form{
+    width: 70%;
+    padding: 15px;
+    margin: 10px;
+
+        input{
+            width: 100%;
+        }
+
+        textarea{
+            width: 100%;
+        }
+
+        #enviar{
+            border-radius: 5px;
+            color: $color-title;
+            background-color: $color-navbar;
+            border-color: #0b7dda;
+
+            &:hover{
+                background: #0b7dda;
+            }
+        }
+
+        h3 {
+            margin-left: 0;
+        }
+    }
+
+    .grid-container-form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    .grid-container-form-field-1{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .grid-container-form-field-2{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    .grid-container-form-field-3{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .grid-container-form-field-4{
+        grid-column: 1 / span 2;
+        display: grid;
+        grid-template-columns: repeat(24, 1fr);
+        gap: 20px;
+    }
+    
+    .grid-container-form-field-4_1{
+        grid-column: span 1;
+        grid-row: 2;
+    }
+    
+    .grid-container-form-field-4_2{
+        grid-column: span 6;
+        grid-row: 2;
+    }
+    
+    .grid-container-form-field-5{
+        grid-column: 1 / span 2;
+        grid-row: 4;
+    }
