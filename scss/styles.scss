@@ -30,6 +30,12 @@ header{
                 float: left;
                 font-size: 15px;
                 transition: 0.3s;
+
+                &:hover {
+                    /* background: #094355; */
+                    /* padding: 10px 20px; */
+                    font-size: large;
+                }
                 
                 a {
                     background: #208ed9;
@@ -60,12 +66,6 @@ header{
     font-weight: bold ;
     font-size: larger;
     text-decoration: none;
-}
-
-header nav ul li:hover {
-    /* background: #094355; */
-    /* padding: 10px 20px; */
-    font-size: large;
 }
 
 body{
@@ -138,10 +138,10 @@ form{
         color: #ffff;
         background-color: #007bff;
         border-color: #0b7dda;
-    }
 
-    #enviar:hover{
-        background: #0b7dda;
+        &:hover{
+            background: #0b7dda;
+        }
     }
 
     h3 {
@@ -250,6 +250,11 @@ form{
         height: 100%;
         object-fit: cover;
         transition: transform 1s;
+
+        &:hover{
+            transform: scale(2);
+           
+        }
     }
 
     .paragraph-grid{
@@ -263,11 +268,6 @@ form{
         text-align: center;
         font-size: large;
     }
-}
-
-.grid-item img:hover{
-    transform: scale(2);
-   
 }
 
 @media only screen and (max-width: 768px){
@@ -337,6 +337,11 @@ footer{
                     padding: 10px 20px;
                     text-decoration: none;
                     font-size: small;
+                    transition: 0.3s;
+                }
+
+                &:hover{
+                    font-weight: bolder;
                 }
             }
         }
