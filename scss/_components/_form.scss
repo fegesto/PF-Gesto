@@ -1,33 +1,51 @@
 /*Estilo del formulario*/
+.form-container{
 
-form{
-    width: 70%;
-    padding: 15px;
-    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 
-        input{
-            width: 100%;
-        }
+    form{
+        width: 70%;
+        padding: 15px;
+        margin: 10px;
+        border-style: solid;
+        border-radius: 10px;
+        border-color: silver;
+        background: linear-gradient(120deg, #b2ecd9, $color-background-body);
+        
+            input{
+                width: 100%;
+                border-radius: 5px;
+                background: $color-background-body;
+                text-indent: 5px;
+            }
 
-        textarea{
-            width: 100%;
-        }
+            textarea{
+                width: 100%;
+                border-radius: 5px;
+                background: $color-background-body;
+                text-indent: 5px;
+            }
 
-        #enviar{
-            border-radius: 5px;
-            color: $color-title;
-            background-color: $color-navbar;
-            border-color: #0b7dda;
+            #enviar{
+                border-radius: 5px;
+                color: $color-title;
+                background-color: $color-navbar;
+                border-color: #0b7dda;
+                width: 50%;
+                align-items: center;
 
-            &:hover{
-                background: #0b7dda;
+                &:hover{
+                    background: #0b7dda;
+                }
+            }
+
+            h3 {
+                margin-left: 0;
             }
         }
-
-        h3 {
-            margin-left: 0;
-        }
-    }
 
     .grid-container-form{
         display: grid;
@@ -72,3 +90,4 @@ form{
         grid-column: 1 / span 2;
         grid-row: 4;
     }
+}

@@ -17,6 +17,8 @@ h1 {
   text-align: center;
   background: #021637;
   color: #F5F5DC;
+  padding: 5px;
+  margin-bottom: 0;
 }
 
 h2 {
@@ -86,75 +88,96 @@ header nav ul li a {
 }
 
 /*Estilo del formulario*/
-form {
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.form-container form {
   width: 70%;
   padding: 15px;
   margin: 10px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: silver;
+  background: linear-gradient(120deg, #b2ecd9, #f0f8ff);
 }
-form input {
+.form-container form input {
   width: 100%;
+  border-radius: 5px;
+  background: #f0f8ff;
+  text-indent: 5px;
 }
-form textarea {
+.form-container form textarea {
   width: 100%;
+  border-radius: 5px;
+  background: #f0f8ff;
+  text-indent: 5px;
 }
-form #enviar {
+.form-container form #enviar {
   border-radius: 5px;
   color: #F5F5DC;
   background-color: #208ed9;
   border-color: #0b7dda;
+  width: 50%;
+  align-items: center;
 }
-form #enviar:hover {
+.form-container form #enviar:hover {
   background: #0b7dda;
 }
-form h3 {
+.form-container form h3 {
   margin-left: 0;
 }
+.form-container .grid-container-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+.form-container .grid-container-form-field-1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.form-container .grid-container-form-field-2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.form-container .grid-container-form-field-3 {
+  grid-column: 1;
+  grid-row: 2;
+}
+.form-container .grid-container-form-field-4 {
+  grid-column: 1/span 2;
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  gap: 20px;
+}
+.form-container .grid-container-form-field-4_1 {
+  grid-column: span 1;
+  grid-row: 2;
+}
+.form-container .grid-container-form-field-4_2 {
+  grid-column: span 6;
+  grid-row: 2;
+}
+.form-container .grid-container-form-field-5 {
+  grid-column: 1/span 2;
+  grid-row: 4;
+}
 
-.grid-container-form {
+.grid-container-portfolio {
+  margin-top: 10px;
+  margin-bottom: 10px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   padding: 10px;
 }
 
-.grid-container-form-field-1 {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.grid-container-form-field-2 {
-  grid-column: 2;
-  grid-row: 1;
-}
-
-.grid-container-form-field-3 {
-  grid-column: 1;
-  grid-row: 2;
-}
-
-.grid-container-form-field-4 {
-  grid-column: 1/span 2;
-  display: grid;
-  grid-template-columns: repeat(24, 1fr);
-  gap: 20px;
-}
-
-.grid-container-form-field-4_1 {
-  grid-column: span 1;
-  grid-row: 2;
-}
-
-.grid-container-form-field-4_2 {
-  grid-column: span 6;
-  grid-row: 2;
-}
-
-.grid-container-form-field-5 {
-  grid-column: 1/span 2;
-  grid-row: 4;
-}
-
-.grid-container {
+.grid-container-directores {
+  margin-top: 10px;
+  margin-bottom: 10px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
@@ -189,52 +212,6 @@ form h3 {
   font-size: large;
 }
 
-/* footer nav{
-    background-color: $color-sections;
-    width: 100%;
-} */
-footer {
-  clear: both;
-  background-color: #021637;
-}
-footer nav ul {
-  /* background-color: $color-sections; */
-  overflow: hidden;
-  list-style: none;
-}
-footer nav ul li a {
-  /* background-color: $color-sections; */
-  color: #c0c0c0;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-size: small;
-  transition: 0.3s;
-}
-footer nav ul li:hover {
-  font-weight: bolder;
-}
-
-.footer__flex {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 10px 0;
-}
-
-/* footer nav ul li {
-background-color: $color-sections;
-} */
-.copyright__gg p {
-  /* background-color: $color-sections; */
-  color: #c0c0c0;
-  width: 100%;
-  text-align: center;
-  /* float: inline-end; */
-  font-size: small;
-  margin: 0;
-  font-size: 10px;
-}
-
 /*Estilo logo*/
 #logoGGProd {
   display: flex;
@@ -259,6 +236,56 @@ background-color: $color-sections;
   float: left;
   margin: 20px;
   filter: grayscale();
+}
+
+footer {
+  clear: both;
+  background-color: #021637;
+  margin: 0;
+  min-height: 50vh;
+}
+footer ul {
+  overflow: hidden;
+  list-style: none;
+}
+footer ul li a {
+  background-color: #021637;
+  color: #c0c0c0;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: small;
+  transition: 0.3s;
+}
+footer ul li:hover {
+  font-weight: bolder;
+}
+footer .footer__flex {
+  background-color: #021637;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  margin: 0;
+}
+footer .copyright__gg p {
+  background-color: #021637;
+  color: #c0c0c0;
+  width: 100%;
+  text-align: center;
+  font-size: small;
+  font-size: 10px;
+  margin: 0;
+}
+footer .map-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+footer .map-location iframe {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 80%;
 }
 
 .services-container {
